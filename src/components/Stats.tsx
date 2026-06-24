@@ -40,7 +40,7 @@ function CountUp({ target, suffix }: { target: number; suffix: string }) {
   }, [target]);
 
   return (
-    <div ref={ref} className="font-display font-bold text-4xl lg:text-5xl">
+    <div ref={ref} className="font-display font-bold text-5xl lg:text-7xl">
       {count}{suffix}
     </div>
   );
@@ -63,13 +63,13 @@ export default function Stats() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="text-center"
             >
-              <div className={`flex justify-center mb-3 ${stat.color}`}>
-                <stat.icon size={28} />
+              <div className={`flex justify-center mb-5 ${stat.color}`}>
+                <stat.icon size={40} />
               </div>
               <div className={stat.color}>
                 <CountUp target={stat.value} suffix={stat.suffix} />
               </div>
-              <div className="text-dark-400 text-sm mt-2">{stat.label}</div>
+              <div className="text-dark-400 text-lg font-semibold mt-2">{stat.label}</div>
             </motion.div>
           ))}
         </div>
