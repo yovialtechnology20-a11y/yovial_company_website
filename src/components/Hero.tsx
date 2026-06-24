@@ -56,12 +56,12 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="font-display font-bold text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] mb-6"
             >
-              Transforming{' '}
-              <span className="gradient-text">Ideas</span>{' '}
-              Into Powerful
-              <br />
-              <span className="gradient-text">Digital</span>{' '}
-              Experiences
+             Transforming Ideas
+<span className="gradient-text">Into</span>{' '}
+Powerful
+<br />
+<span className="gradient-text">Digital</span>{' '}
+Solutions
             </motion.h1>
 
             {/* Subheadline */}
@@ -71,8 +71,10 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-dark-300 text-lg lg:text-xl leading-relaxed mb-10 max-w-xl"
             >
-              We build modern websites, web applications, and digital solutions that
-              help businesses grow and stand out in the digital world.
+              Yovial Technologies helps startups, clinics, salons, hostels, cafes, gyms, 
+              and local businesses establish a strong online presence through premium websites,
+              web applications, SEO, and digital growth solutions. We transform ideas 
+              into professional digital experiences that drive real business results.
             </motion.p>
 
             {/* CTA Buttons */}
