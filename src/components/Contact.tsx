@@ -8,14 +8,14 @@ const contactInfo = [
     icon: Phone,
     label: 'Call Us',
     value: '+91 8247475087',
-    href: 'tel:+918247475088',
+    href: 'tel:+918247475087',
     color: 'from-blue-500 to-cyan-500',
   },
   {
     icon: MessageCircle,
     label: 'WhatsApp',
-    value: '+91 824747508',
-    href: 'https://wa.me/91824747508?text=Hello%20Yovial%20Technologies%2C%20I%20need%20a%20website.',
+    value: '+91 8247475087',
+    href: 'https://wa.me/918247475087?text=Hello%20Yovial%20Technologies%2C%20I%20need%20a%20website.',
     color: 'from-emerald-500 to-green-500',
   },
   {
