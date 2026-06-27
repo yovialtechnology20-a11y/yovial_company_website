@@ -113,16 +113,16 @@ export default function Footer() {
             <h4 className="font-display font-semibold text-white mb-4 text-sm tracking-wide uppercase">Contact</h4>
             <ul className="space-y-4">
               <li>
-                <a href="tel:+917893549978" className="flex items-center gap-3 text-dark-400 hover:text-white transition-colors group">
+                <a href="tel:+918247465087" className="flex items-center gap-3 text-dark-400 hover:text-white transition-colors group">
                   <div className="w-8 h-8 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-blue-500/20 transition-colors">
                     <Phone size={13} className="text-blue-400" />
                   </div>
-                  <span className="text-sm">+91 7893549978</span>
+                  <span className="text-sm">+91 8247475087</span>
                 </a>
               </li>
               <li>
                 <a
-                  href="https://wa.me/917893549978?text=Hello%20Yovial%20Technologies%2C%20I%20need%20a%20website."
+                  href="https://wa.me/918247475087?text=Hello%20Yovial%20Technologies%2C%20I%20need%20a%20website."
                   target="_blank"
                   rel="noreferrer"
                   className="flex items-center gap-3 text-dark-400 hover:text-white transition-colors group"
