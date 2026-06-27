@@ -69,20 +69,19 @@ export default function Contact() {
     }, 4000);
 
     // Optional: Open WhatsApp after email is sent
-    window.open(
+window.open(
       `https://wa.me/918247475087?text=${encodeURIComponent(
         `Hello Yovial Technologies!\n\nName: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}\nService: ${form.service}\n\nMessage: ${form.message}`
       )}`,
       '_blank'
     );
-  } } catch (error: any) {
-  console.log("EmailJS Error:", error);
-  console.log("Status:", error.status);
-  console.log("Text:", error.text);
-  console.log("Message:", error.message);
+  } catch (error: any) {
+    console.log("EmailJS Error:", error);
+    console.log("Status:", error.status);
+    console.log("Text:", error.text);
+    console.log("Message:", error.message);
 
-  alert(error.text || error.message || "EmailJS Error");
-}
+    alert(error.text || error.message || "EmailJS Error");
   }
 };
 
