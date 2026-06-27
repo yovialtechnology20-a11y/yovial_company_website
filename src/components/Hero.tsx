@@ -8,8 +8,8 @@ const floatingCards = [
 ];
 
 const stats = [
-  { value: '5', label: 'Projects Launched' },
-  { value: '5+', label: 'Happy Clients' },
+  { value: '11', label: 'Projects Launched' },
+  { value: '11+', label: 'Happy Clients' },
   { value: '1+', label: 'Years Experience' },
   { value: '100%', label: 'Client Satisfaction' },
 ];
