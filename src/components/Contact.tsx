@@ -38,19 +38,48 @@ export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', service: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const msg = encodeURIComponent(
-      `Hello Yovial Technologies!\n\nName: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}\nService: ${form.service}\n\nMessage: ${form.message}`
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    await emailjs.send(
+      'service_9apv3wq',
+      'template_bjuesfc',
+      {
+        name: form.name,
+        email: form.email,
+        phone: form.phone,
+        service: form.service,
+        message: form.message,
+      },
+      '7CXg6Gcj2qpNXPChW'
     );
-    window.open(`https://wa.me/91824747508?text=${msg}`, '_blank');
+
     setSubmitted(true);
+
     setTimeout(() => {
       setSubmitted(false);
-      setForm({ name: '', email: '', phone: '', service: '', message: '' });
+      setForm({
+        name: '',
+        email: '',
+        phone: '',
+        service: '',
+        message: '',
+      });
     }, 4000);
-  };
 
+    // Optional: Open WhatsApp after email is sent
+    window.open(
+      `https://wa.me/918247475087?text=${encodeURIComponent(
+        `Hello Yovial Technologies!\n\nName: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}\nService: ${form.service}\n\nMessage: ${form.message}`
+      )}`,
+      '_blank'
+    );
+  } catch (error) {
+    console.error(error);
+    alert('Failed to send message. Please try again.');
+  }
+};
   return (
     <section id="contact" className="relative py-24 lg:py-32 bg-dark-950 overflow-hidden">
       <div className="orb w-96 h-96 bg-blue-700 top-0 right-0 opacity-10" />
