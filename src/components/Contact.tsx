@@ -1,3 +1,4 @@
+import emailjs from '@emailjs/browser';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Phone, MapPin, Send, MessageCircle, CheckCircle, Mail } from 'lucide-react';
