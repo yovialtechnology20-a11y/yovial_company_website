@@ -7,15 +7,15 @@ const contactInfo = [
   {
     icon: Phone,
     label: 'Call Us',
-    value: '+91 824747508',
-    href: 'tel:+918247475087',
+    value: '+91 7893549978',
+    href: 'tel:+917893549978',
     color: 'from-blue-500 to-cyan-500',
   },
   {
     icon: MessageCircle,
     label: 'WhatsApp',
-    value: '+91 8247475087',
-    href: 'https://wa.me/918247475087?text=Hello%20Yovial%20Technologies%2C%20I%20need%20a%20website.',
+    value: '+91 7893549978',
+    href: 'https://wa.me/917893549978?text=Hello%20Yovial%20Technologies%2C%20I%20need%20a%20website.',
     color: 'from-emerald-500 to-green-500',
   },
   {
@@ -38,12 +38,12 @@ export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', service: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+ const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
 
   try {
     await emailjs.send(
-      'service_9apv3wq',
+      'service_9apv8wq',
       'template_bjuesfc',
       {
         name: form.name,
@@ -75,11 +75,17 @@ export default function Contact() {
       )}`,
       '_blank'
     );
-  } catch (error) {
-    console.error(error);
-    alert('Failed to send message. Please try again.');
+  } } catch (error: any) {
+  console.log("EmailJS Error:", error);
+  console.log("Status:", error.status);
+  console.log("Text:", error.text);
+  console.log("Message:", error.message);
+
+  alert(error.text || error.message || "EmailJS Error");
+}
   }
 };
+
   return (
     <section id="contact" className="relative py-24 lg:py-32 bg-dark-950 overflow-hidden">
       <div className="orb w-96 h-96 bg-blue-700 top-0 right-0 opacity-10" />
