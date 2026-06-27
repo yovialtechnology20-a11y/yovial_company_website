@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 import { Users, FolderOpen, Clock, Star } from 'lucide-react';
 
 const stats = [
-  { icon: FolderOpen, value: 5, suffix: '', label: 'Projects Launched', color: 'text-blue-400' },
-  { icon: Users, value: 5, suffix: '+', label: 'Happy Clients', color: 'text-violet-400' },
+  { icon: FolderOpen, value: 11, suffix: '', label: 'Projects Launched', color: 'text-blue-400' },
+  { icon: Users, value: 11, suffix: '+', label: 'Happy Clients', color: 'text-violet-400' },
   { icon: Clock, value: 1, suffix: '+', label: 'Years Experience', color: 'text-cyan-400' },
   { icon: Star, value: 100, suffix: '%', label: 'Client Satisfaction', color: 'text-yellow-400' },
 ];
