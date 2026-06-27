@@ -6,15 +6,15 @@ const contactInfo = [
   {
     icon: Phone,
     label: 'Call Us',
-    value: '+91 7893549978',
-    href: 'tel:+917893549978',
+    value: '+91 824747508',
+    href: 'tel:+918247475087',
     color: 'from-blue-500 to-cyan-500',
   },
   {
     icon: MessageCircle,
     label: 'WhatsApp',
-    value: '+91 7893549978',
-    href: 'https://wa.me/917893549978?text=Hello%20Yovial%20Technologies%2C%20I%20need%20a%20website.',
+    value: '+91 8247475087',
+    href: 'https://wa.me/918247475087?text=Hello%20Yovial%20Technologies%2C%20I%20need%20a%20website.',
     color: 'from-emerald-500 to-green-500',
   },
   {
@@ -42,7 +42,7 @@ export default function Contact() {
     const msg = encodeURIComponent(
       `Hello Yovial Technologies!\n\nName: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}\nService: ${form.service}\n\nMessage: ${form.message}`
     );
-    window.open(`https://wa.me/917893549978?text=${msg}`, '_blank');
+    window.open(`https://wa.me/91824747508?text=${msg}`, '_blank');
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);
